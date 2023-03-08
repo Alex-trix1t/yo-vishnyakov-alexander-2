@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>DL Academy</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <main>
+      <h1 class="contact__name">CONTACT US</h1>
+      <ul class="contact__page">
+        <li class="contact__pages"><a class="contact__page__items" href="index.html">Home</a></li>
+        <a class="contact__page__vector" href="/"></a>
+        <li class="contact__pages"><a class="contact__page__items" href="catalog.html">Contact Us</a></li>
+      </ul>
+      <section class="contact">
+        <form class="form" action="">
+          <div class="form__items">
+            <label class="form__items__name" for="name">Name</label>
+            <input class="form__items__name__field" type="text" placeholder="Ivan Ivanov" name="name" id="name">
+          </div>
+          <div class="form__items__second">
+            <div class="form__items__field">
+              <label class="form__items__phone" for="phone">Phone</label>
+              <input class="form__items__phone__field" type="tel" name="phone" id="phone">
+            </div>
+            <div class="form__items__field__second">
+              <label class="form__items__email" for="email">Email</label>
+              <input class="form__items__email__field" type="email" name="email" id="email">
+            </div>
+          </div>
+          <div class="form__items__field">
+            <label class="form__items__message" for="message">Message</label>
+            <textarea class="form__items__message__field" name="message" id="message" cols="30" rows="10"></textarea>
+          </div>
+          <div class="form__checkbox">
+            <input class="form__checkbox__input" type="checkbox" name="checkbox" id="checkbox">
+            <label class="form__checkbox__text" for="checkbox">By clicking on the button, you consent to the processing of your personal data</label>
+          </div>
+          <button class="form__button btn">SUBMIT</button>
+        </form>
+        <div class="contact__info">
+          <p class="contact__info__text">
+            Our support team are on-hand to assist with any issues you are experiencing.
+          </p>
+          <p class="contact__info__text contact__info__text__second">
+            Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.
+          </p>
+          <p class="contact__info__subtitle">
+            AN EXPERT IS WAITING TO HELP YOU!
+          </p>
+        </div>
+      </section>
+    </main>
+    @@include('blocks/footer.html')
+  </body>
+</html>
