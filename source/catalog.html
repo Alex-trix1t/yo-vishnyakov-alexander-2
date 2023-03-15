@@ -32,25 +32,27 @@
           <li class="category__pages"><a class="category__page__items" href="catalog.html">Catalog</a></li>
         </ul>
         <ul class="product__items__first">
-          <li class="product__items1">
-            <a class="product__items__link1 product__link1" href="#">APPAREL KIDS</a>
+          @@include('blocks/catalog-items.html',{
+            "name": "APPAREL KIDS",
+            "img": "product__items__one",
+            "link": "product__link__one",
+          })
+          <li class="product__items__two">
+            <a class="product__items__link__two product__link__two" href="#">HOLIDAY SHOP</a>
           </li>
-          <li class="product__items2">
-            <a class="product__items__link2 product__link2" href="#">HOLIDAY SHOP</a>
-          </li>
-          <li class="product__items3">
-            <a class="product__items__link3 product__link3" href="toys.html">TOYS</a>
+          <li class="product__items__three">
+            <a class="product__items__link__three product__link__three" href="toys.html">TOYS</a>
           </li>
         </ul>
         <ul class="product__items__second">
-          <li class="product__items4">
-            <a class="product__items__link4 product__link4" href="#">ACCESSORIES</a>
+          <li class="product__items__four">
+            <a class="product__items__link__four product__link__four" href="#">ACCESSORIES</a>
           </li>
-          <li class="product__items5">
-            <a class="product__items__link5 product__link5" href="#">SALE</a>
+          <li class="product__items__five">
+            <a class="product__items__link__five product__link__five" href="#">SALE</a>
           </li>
-          <li class="product__items6">
-            <a class="product__items__link6 product__link6" href="#">APPAREL ADULTS</a>
+          <li class="product__items__six">
+            <a class="product__items__link__six product__link__six" href="#">APPAREL ADULTS</a>
           </li>
         </ul>
       <section class="category__last">
