@@ -26,9 +26,14 @@
     <main>
       <h1 class="contact__name">CONTACT US</h1>
       <ul class="contact__page">
-        <li class="contact__pages"><a class="contact__page__items" href="index.html">Home</a></li>
-        <a class="contact__page__vector" href="/"></a>
-        <li class="contact__pages"><a class="contact__page__items" href="catalog.html">Contact Us</a></li>
+        @@include('blocks/pages.html',{
+          "link": "index.html",
+          "name": "Home",
+        })
+        @@include('blocks/pages.html',{
+          "link": "contact.html",
+          "name": "Contact Us",
+        })
       </ul>
       <section class="contact">
         <form class="form" action="">

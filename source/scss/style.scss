@@ -6,6 +6,7 @@
 */
 @import "vendor/_normalize";
 
+
 /*
   Import utils classes and base styles
 */
@@ -22,6 +23,10 @@
 @import "_blocks/header";
 @import "_blocks/footer";
 @import "_blocks/blogblock";
+@import "_blocks/catalogitems";
+@import "_blocks/toysitems";
+@import "_blocks/pages";
+@import "_blocks/mainitems";
 
 /*
   Ниже пример подключения других блоков
@@ -147,7 +152,7 @@
   color: #1E0606;
 }
 
-.product__items {
+.product__items__main {
   display: flex;
   margin-top: 30px;
 }

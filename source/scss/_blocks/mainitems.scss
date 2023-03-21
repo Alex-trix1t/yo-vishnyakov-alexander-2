@@ -19,20 +19,11 @@
         background-image: url(../img/toys.png);
     }
     &__four {
+        margin-left: 20px;
         background-color: #D5D4E1;
         background-image: url(../img/monkey.png);
     }
-    &__five {
-        background-color: #F3D0DB;
-        background-image: url(../img/flamingos.png);
-        margin-left: 20px;
-    }
-    &__six {
-        background-color: #E5EAF8;
-        background-image: url(../img/dress.png);
-        margin-left: 20px;
-    }
-} 
+}
 
 .product__link {
     font-family: 'Montserrat';
@@ -61,17 +52,6 @@
     &__four {
         left: 44px;
         top: 119px;
-        position: relative;
-    }
-    &__five {
-        left: 105px;
-        top: 119px;
-        position: relative;
-    }
-    &__six {
-        left: 62px;
-        top: 103px;
-        width: 100px;
         position: relative;
     }
 }

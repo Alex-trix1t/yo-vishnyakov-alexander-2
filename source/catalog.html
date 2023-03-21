@@ -27,33 +27,54 @@
       <section class="category">
         <h1 class="category__name">CATEGORY PRODUCTS</h1>
         <ul class="category__page">
-          <li class="category__pages"><a class="category__page__items" href="index.html">Home</a></li>
-          <a class="category__page__vector" href="/"></a>
-          <li class="category__pages"><a class="category__page__items" href="catalog.html">Catalog</a></li>
+          @@include('blocks/pages.html',{
+            "link": "index.html",
+            "name": "Home",
+          })
+          @@include('blocks/pages.html',{
+            "link": "catalog.html",
+            "name": "Catalog",
+          })
         </ul>
         <ul class="product__items__first">
           @@include('blocks/catalog-items.html',{
             "name": "APPAREL KIDS",
             "img": "product__items__one",
             "link": "product__link__one",
+            "href": "#"
           })
-          <li class="product__items__two">
-            <a class="product__items__link__two product__link__two" href="#">HOLIDAY SHOP</a>
-          </li>
-          <li class="product__items__three">
-            <a class="product__items__link__three product__link__three" href="toys.html">TOYS</a>
-          </li>
+          @@include('blocks/catalog-items.html',{
+            "name": "HOLIDAY SHOP",
+            "img": "product__items__two",
+            "link": "product__link__two",
+            "href": "#"
+          })
+          @@include('blocks/catalog-items.html',{
+            "name": "TOYS",
+            "img": "product__items__three",
+            "link": "product__link__three",
+            "href": "toys.html"
+          })
         </ul>
         <ul class="product__items__second">
-          <li class="product__items__four">
-            <a class="product__items__link__four product__link__four" href="#">ACCESSORIES</a>
-          </li>
-          <li class="product__items__five">
-            <a class="product__items__link__five product__link__five" href="#">SALE</a>
-          </li>
-          <li class="product__items__six">
-            <a class="product__items__link__six product__link__six" href="#">APPAREL ADULTS</a>
-          </li>
+          @@include('blocks/catalog-items.html',{
+            "name": "ACCESSORIES",
+            "img": "product__items__four",
+            "link": "product__link__four",
+            "href": "#"
+          })
+          @@include('blocks/catalog-items.html',{
+            "name": "SALE",
+            "img": "product__items__five",
+            "link": "product__link__five",
+            "href": "#"
+          })
+          @@include('blocks/catalog-items.html',{
+            "name": "APPAREL ADULTS",
+            "img": "product__items__six",
+            "link": "product__link__six",
+            "href": "#"
+          })
         </ul>
       <section class="category__last">
         <h2 class="category__name">PRODUCT DESCRIPTION</h2>

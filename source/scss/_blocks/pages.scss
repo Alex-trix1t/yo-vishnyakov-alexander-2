@@ -1,0 +1,21 @@
+.pages {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.page__items {
+    color: #1E0606;
+}
+
+.page__vector {
+    background-image: url(../img/icon/vector.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    height: 12px;
+    padding-left: 40px;
+    width: 8px;
+}

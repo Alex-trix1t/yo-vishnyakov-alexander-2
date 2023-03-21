@@ -46,19 +46,31 @@
       </section>
     <section class="product container">
       <h2 class="product__name">CATEGORY PRODUCTS</h2>
-      <ul class="product__items">
-        <li class="product__items1">
-          <a href="#" class="product__items__link1 product__link1">APPAREL KIDS</a>
-        </li>
-        <li class="product__items2">
-          <a href="#" class="product__items__link2 product__link2">HOLIDAY SHOP</a>
-        </li>
-        <li class="product__items3">
-          <a href="#" class="product__items__link3 product__link3">TOYS</a>
-        </li>
-        <li class="product__items4">
-          <a href="#" class="product__items__link4 product__link4">ACCESSORIES</a>
-        </li>
+      <ul class="product__items__main">
+        @@include('blocks/main-items.html',{
+          "name": "APPAREL KIDS",
+          "img": "product__items__one",
+          "link": "product__link__one",
+          "href": "#"
+        })
+        @@include('blocks/main-items.html',{
+          "name": "HOLIDAY SHOP",
+          "img": "product__items__two",
+          "link": "product__link__two",
+          "href": "#"
+        })
+        @@include('blocks/main-items.html',{
+          "name": "TOYS",
+          "img": "product__items__three",
+          "link": "product__link__three",
+          "href": "toys.html"
+        })
+        @@include('blocks/main-items.html',{
+          "name": "ACCESSORIES",
+          "img": "product__items__four",
+          "link": "product__link__four",
+          "href": "#"
+        })
       </ul>
       <div class="vector">
         <button class="vector__left" type="button"></button>

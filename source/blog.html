@@ -29,9 +29,14 @@
         BLOG
       </h1>
       <ul class="blog__page">
-        <li class="blog__pages"><a class="blog__page__items" href="index.html">Home</a></li>
-        <a class="blog__page__vector" href="/"></a>
-        <li class="blog__pages"><a class="blog__page__items" href="blog.html">Blog</a></li>
+        @@include('blocks/pages.html',{
+          "link": "index.html",
+          "name": "Home",
+        })
+        @@include('blocks/pages.html',{
+          "link": "blog.html",
+          "name": "Blog",
+        })
       </ul>
       <ul class="blog__items__first">
         @@include('blocks/blogblock.html',
