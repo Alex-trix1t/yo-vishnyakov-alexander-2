@@ -1,0 +1,90 @@
+.category {
+    margin-left: 110px;
+    margin-bottom: 55px;
+    margin-top: 60px;
+}
+
+.category__name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    color: #1E0606;
+}
+
+.category__page {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.category__pages {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.category__page__items {
+    color: #1E0606;
+}
+
+.category__page__vector {
+    background-image: url(../img/icon/vector.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    height: 12px;
+    padding-left: 40px;
+    width: 8px;
+}
+
+.product__items__first {
+    display: flex;
+    margin-top: 50px;
+}
+
+
+.product__items__second {
+    margin-top: 23px;
+    margin-left: 200px;
+    display: flex;
+}
+
+
+.category__last {
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+.category__text__info {
+    padding-top: 25px;
+}
+
+.category__text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+
+.category__text__first {
+    width: 680px;
+    height: 44px;
+}
+
+.category__text__second {
+    padding-top: 15px;
+    width: 680px;
+    height: 44px;
+}
+
+.category__text__third {
+    padding-top: 15px;
+    width: 680px;
+    height: 66px;
+}

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>DL Academy</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+  <body>
+    @@include('blocks/header.html')
+  <main>
+    <section class="toys">
+      <h1 class="toys__name">TOY FOR KIDS</h1>
+      <ul class="toys__page">
+        @@include('blocks/pages.html',{
+          "link": "index.html",
+          "name": "Home",
+        })
+        @@include('blocks/pages.html',{
+          "link": "catalog.html",
+          "name": "Catalog",
+        })
+        @@include('blocks/pages.html',{
+          "link": "toys.html",
+          "name": "Toys",
+        })
+      </ul>
+    </section>
+    <section class="toys__filter">
+      <div class="filter">
+        <div class="filter__cost">
+          <p class="filter__cost__name">Cost</p>
+          <div class="filter__cost__slider">
+            <input class="filter__cost__input" type="range" min="0" max="500" value="100">
+            <span class="filter__cost__number">0 500</span>
+          </div>
+        </div>
+        <div class="filter__color">
+          <p class="filter__color__name">Color</p>
+          <ul class="filter__color__list">
+            <li>
+              <input class="filter__color__input" type="checkbox" name="color" id="black">
+              <label class="filter__color__type" for="black">Black</label>
+            </li>
+            <li>
+              <input class="filter__color__input" type="checkbox" name="color" id="blue">
+              <label class="filter__color__type" for="blue">Blue</label>
+            </li>
+            <li>
+              <input class="filter__color__input" type="checkbox" name="color" id="green">
+              <label class="filter__color__type" for="green">Green</label>
+            </li>
+            <li>
+              <input class="filter__color__input" type="checkbox" name="color" id="white">
+              <label class="filter__color__type" for="white">White</label>
+            </li>
+          </ul>
+        </div>
+        <div class="filter__delivery">
+          <p class="filter__delivery__name">Delivery</p>
+          <ul class="filter__delivery__list">
+            <li>
+              <input class="filter__delivery__input" type="radio" name="delivery" id="free" checked>
+              <label class="filter__delivery__type" for="free">Free shipping</label>
+            </li>
+            <li>
+              <input class="filter__delivery__input" type="radio" name="delivery" id="fast">
+              <label class="filter__delivery__type" for="fast">Fast shipping</label>
+            </li>
+          </ul>
+        </div>
+        <div class="filter__amount">
+          <p class="filter__amount__name">Amount</p>
+          <ul class="filter__amount__list">
+            <li>
+              <input class="filter__amount__input" type="radio" name="amount" id="0-5" value="0-5" checked>
+              <label class="filter__amount__type filter__amount__type-cheked" for="0-5">0-5</label>
+            </li>
+            <li>
+              <input class="filter__amount__input" type="radio" name="amount" id="10-20" value="10-20">
+              <label class="filter__amount__type" for="10-20">10-20</label>
+            </li>
+            <li>
+              <input class="filter__amount__input" type="radio" name="amount" id="20-50" value="20-50">
+              <label class="filter__amount__type" for="20-50">20-50</label>
+            </li>
+          </ul>
+        </div>
+        <div class="filter__button">
+          <button class="btn" type="submit">APPLY</button>
+        </div>
+      </div>
+      </section>
+      <section class="toys__choice">
+        <ul class="toys__choice__item">
+          @@include('blocks/toys-items.html',{
+            "img": "/img/shark.png",
+            "name": "SHARKY BEAN BAG CHAIR COVER",
+            "price": "$60.00 USD",
+          })
+          @@include('blocks/toys-items.html',{
+            "img": "/img/lamp.png",
+            "name": "BRASS DECO FRAMES",
+            "price": "$66.00 USD",
+          })
+          @@include('blocks/toys-items.html',{
+            "img": "/img/apron.png",
+            "name": "CIBO FULL APRON",
+            "price": "$60.00 USD",
+          })
+          @@include('blocks/toys-items.html',{
+            "img": "/img/constructor.png",
+            "name": "GATCHA GATCHA GUMBALL MACHINE",
+            "price": "$56.00 USD",
+          })
+          @@include('blocks/toys-items.html',{
+            "img": "/img/candle.png",
+            "name": "CHRISTMAS ADVENT SCENTED CANDLE",
+            "price": "$29.00 USD",
+          })
+          @@include('blocks/toys-items.html',{
+            "img": "/img/knife.png",
+            "name": "TANGLE SPINNING TEA LIGHT",
+            "price": "$56.00 USD",
+          })
+        </ul>
+      </div>
+      <div class="toys__leaf">
+        <ul class="toys__leaf__items">
+          <li class="toys__leaf__left"><button class="toys__leaf__button__left" type="button"></button></li>
+          <li class="toys__leaf__page-active"><a class="toys__leaf__link-active" href="/pages/toys.html">1</a></li>
+          <li class="toys__leaf__page"><a class="toys__leaf__link" href="#">2</a></li>
+          <li class="toys__leaf__page"><a class="toys__leaf__link" href="#">3</a></li>
+          <li class="toys__leaf__page"><a class="toys__leaf__link" href="#">4</a></li>
+          <li class="toys__leaf__right"><button class="toys__leaf__button__right" type="button"></button></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  @@include('blocks/footer.html')
+</body>
+</html>

@@ -1,0 +1,57 @@
+.product__items {
+    width: 280px;
+    height: 270px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    &__one {
+        background-color: #DBE4DB;
+        background-image: url(../img/pullover.jpg);
+    }
+    &__two {
+        margin-left: 20px;
+        background-color: #EADDD3;
+        background-image: url(../img/sock.png);
+    }
+    &__three {
+        margin-left: 20px;
+        background-color: #F8F2DA;
+        background-image: url(../img/toys.png);
+    }
+    &__four {
+        margin-left: 20px;
+        background-color: #D5D4E1;
+        background-image: url(../img/monkey.png);
+    }
+}
+
+.product__link {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        color: #fff;
+        text-align: center;
+    &__one {
+        position: absolute;
+        left: 75px;
+        top: 103px;
+        width: 129px;
+    }
+    &__two {
+        width: 155px;
+        left: 62px;
+        top: 103px;
+        position: relative;
+    }
+    &__three {
+        left: 104px;
+        top: 119px;
+        position: relative;
+    }
+    &__four {
+        left: 44px;
+        top: 119px;
+        position: relative;
+    }
+}
